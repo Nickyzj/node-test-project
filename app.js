@@ -3,7 +3,9 @@ const http = require('http');
 let count = 0;
 
 const server = http.createServer((request, response) => {
-    response.write(`You are the ${count++} user access`);
+    response.writeHead(200, {"Content-Type": "text/html;charset=utf8"})
+    response.write(`You are the ${count++} user access<br>`);
+    response.write(`你是第${count}个访问者`);
     response.end();
 });
 
