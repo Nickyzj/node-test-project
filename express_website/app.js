@@ -20,5 +20,37 @@ app.get('/about', function(req, res) {
     res.render('about');
 });
 
+app.get('/contact', function(req, res) {
+    res.render('contact');
+});
+
+app.post('/contact/send', function(req, res) {
+    var transporter = nodemailer.createTransport({
+        service: 'Gmail',
+        auth: {
+            user: 'nicky.zj@gmail.com',
+            pass: ''
+        }
+    });
+
+    var mailOptions = {
+        from: 'nicky.zj@gmail.com',
+        to: 'nicky.zheng@techdata.com',
+        subject: 'test',
+        text: 'test text',
+        html: '<h1>Hello world</h1>'
+    };
+
+    transporter.sendMail(mailOptions, function(error, info) {
+        if(error) {
+            console.log(error);
+            res.redirect('/');
+        } else {
+            console.log('Message send: ' + info.response);
+            res.redirect('/');
+        }
+    });
+});
+
 app.listen(8080, '0.0.0.0');
 console.log('Server is running on port 8080');
