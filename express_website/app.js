@@ -34,11 +34,11 @@ app.post('/contact/send', function(req, res) {
     });
 
     var mailOptions = {
-        from: 'nicky.zj@gmail.com',
+        from: 'Nicky Zheng <nicky.zj@gmail.com>',
         to: 'nicky.zheng@techdata.com',
         subject: 'test',
         text: 'test text',
-        html: '<h1>Hello world</h1>'
+        html: '<p>You have a message:</p><ul><li>Name: ' + req.body.name + '</li><li>Email: ' + req.body.email + '</li><li>Message: ' + req.body.message + '</li></ul>'
     };
 
     transporter.sendMail(mailOptions, function(error, info) {
