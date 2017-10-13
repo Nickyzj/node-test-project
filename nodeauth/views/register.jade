@@ -1,0 +1,25 @@
+extends layout
+
+block content
+    h2.page-header Register
+    p Please register using the form blow
+    form(method='post', action='/users/register', enctype='multipart/form-data')
+        .form-group
+            label Name
+            input.form-control(name='name', type='text', placehoser='Enter name')
+        .form-group
+            label Email
+            input.form-control(name='email', type='emial', placehoser='Enter email')
+        .form-group
+            label Username
+            input.form-control(name='username', type='text', placehoser='Enter username')
+        .form-group
+            label Password
+            input.form-control(name='password', type='password', placehoser='Enter password')
+        .form-group
+            label Confirm Password
+            input.form-control(name='password2', type='password', placehoser='Confirm password')
+        .form-group
+            label Profile Image
+            input.form-control(name='profileimage', type='file')
+        input.btn.btn-primary(type='submit', name='submit', value='Register')
