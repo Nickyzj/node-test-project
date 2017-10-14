@@ -67,5 +67,5 @@ WriteResult({ "nRemoved" : 1 })
 }
 
 
-https://github.com/ctavan/express-validator#legacy-api
+https://github.com/ctavan/express-validator
 
