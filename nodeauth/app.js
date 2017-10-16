@@ -10,6 +10,7 @@ var LocalStrategy = require('passport-local').Strategy;
 var multer = require('multer');
 var upload = multer({dest: './uploads'});
 var flash = require('connect-flash');
+var bcrypt = require('bcryptjs');
 var mongo = require('mongodb');
 var mongoose = require('mongoose');
 var db = mongoose.connection;
@@ -55,6 +56,11 @@ app.use(function (req, res, next) {
   res.locals.messages = require('express-messages')(req, res);
   next();
 });
+
+app.get('*', function(req, res, next) {
+  res.locals.user = req.user || null;
+  next();
+})
 
 app.use('/', index);
 app.use('/users', users);

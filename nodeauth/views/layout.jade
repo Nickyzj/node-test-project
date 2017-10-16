@@ -11,17 +11,20 @@ html(lang='en')
         span.navbar-toggler-icon
       #navbarsExample09.collapse.navbar-collapse
         ul.navbar-nav.mr-auto
-          li.nav-item(class=(title == "Members" ? 'active': ''))
-            a.nav-link(href='/')
-              | Members 
-              //- span.sr-only (current)
-          li.nav-item(class=(title == "Register" ? 'active': ''))
-            a.nav-link(href='/users/register') Register
-          li.nav-item(class=(title == "Login" ? 'active': ''))
-            a.nav-link(href='/users/login') Login
-        ul.navbar-nav.navbar-right
-          li.nav-item
-            a(href='/users/logout') Logout
+          if user
+            li.nav-item(class=(title == "Members" ? 'active': ''))
+              a.nav-link(href='/')
+                | Members 
+                //- span.sr-only (current)
+          if !user
+            li.nav-item(class=(title == "Register" ? 'active': ''))
+              a.nav-link(href='/users/register') Register
+            li.nav-item(class=(title == "Login" ? 'active': ''))
+              a.nav-link(href='/users/login') Login
+        if user
+          ul.navbar-nav.navbar-right
+            li.nav-item
+              a(href='/users/logout') Logout
           
     br
     br
