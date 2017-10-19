@@ -9,7 +9,7 @@ Async.auto({
     mongodbUri: (done) => {
 
         const options = {
-            default: 'mongodb://localhost:27017/aqua'
+            default: 'mongodb://nickyzj:123123@ds027145.mlab.com:27145/comeventsapp'
         };
 
         Promptly.prompt(`MongoDB URI: (${options.default})`, options, done);
