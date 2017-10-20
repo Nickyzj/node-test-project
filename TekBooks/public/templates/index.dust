@@ -1,0 +1,39 @@
+{>"layouts/master" /}
+
+{<body}
+    <div class="grid-x grid-padding-x">
+        <div class="large-3 cell book">
+                <img src="/img/node1.jpg" alt="">
+                <h4>Professional Node.js</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, bu</p>
+                <div class="price">Buy it for <span>$19.99</span></div>
+                <br>
+                <a href="/books/details/1" class="button small">Book Details</a>
+            </div>
+            <div class="large-3 cell book">
+                <img src="/img/node2.jpg" alt="">
+                <h4>Professional Node.js</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, bu</p>
+                <div class="price">Buy it for <span>$19.99</span></div>
+                <br>
+                <a href="/books/details/1" class="button small">Book Details</a>
+            </div>
+            <div class="large-3 cell book">
+                <img src="/img/node3.jpg" alt="">
+                <h4>Professional Node.js</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, bu</p>
+                <div class="price">Buy it for <span>$19.99</span></div>
+                <br>
+                <a href="/books/details/1" class="button small">Book Details</a>
+            </div>
+            <div class="large-3 cell book">
+                <img src="/img/node4.jpg" alt="">
+                <h4>Professional Node.js</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, bu</p>
+                <div class="price">Buy it for <span>$19.99</span></div>
+                <br>
+                <a href="/books/details/1" class="button small">Book Details</a>
+            </div>                      
+    </div>
+    
+{/body}

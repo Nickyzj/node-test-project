@@ -60,3 +60,5 @@ typings/
 bootstrap-4.0.0-beta-dist.zip
 
 uploads
+
+.DS_Store
