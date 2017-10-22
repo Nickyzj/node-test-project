@@ -1,0 +1,23 @@
+{>"layouts/master" /}
+
+{<body}
+    <div class="grid-x grid-padding-x">
+        <div class="large-4 cell book">
+            <img src="/img/node1.jpg" alt="">    
+        </div>
+        <div class="large-8 cell book">
+            <h2>Professional Node.js</h2>
+            <ul class="bookInfo">
+                <li>Category: Node.js</li>
+                <li>Author: John Doe</li>
+                <li>Publisher: Some Publisher</li>
+            </ul>
+            <br>
+            <div class="price"><span>$19.99</span></div>
+            <br>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, bu</p>
+            <a href="" class="button success">Add To Cart</a>
+        </div>
+    </div>
+    
+{/body}

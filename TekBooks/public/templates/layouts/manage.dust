@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{+title /}</title>
+        <title> ADMIN | {+title /}</title>
         <link rel="stylesheet" href="/css/app.css">
         <link rel="stylesheet" href="/css/foundation.css" />
         <link rel="stylesheet" href="/css/style.css" />
@@ -21,9 +21,9 @@
                 <div class="large-12 cell">
                     <div class="top-bar">
                         <ul class="menu">
-                            <li><a href="/">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Cart</a></li>
+                            <li><a href="/manage">Dashboard</a></li>
+                            <li><a href="/manage/books">Books</a></li>
+                            <li><a href="/manage/categories">Categories</a></li>
                         </ul>
                     </div>
                 </div>
@@ -37,7 +37,7 @@
             <footer>
                 <div class="row">
                     <div class="large-12 columns">
-                        <p>TekBoos &copy; 2017 | <a href="/manage">Manage</a></p>
+                        <p>TekBoos &copy; 2017 | <a href="/">Frontend</a></p>
                     </div>
                 </div>
             </footer>
