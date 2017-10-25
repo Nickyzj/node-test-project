@@ -1,3 +1,36 @@
 {>"layouts/manage" /}
 
-INDEX BOOKS
+{<body}
+    <h2>Books</h2>
+    <p><a href="/manage/books/add">Add Book</a></p>
+    <table>
+        <thead>
+            <tr>
+                <th width="200">ID</th>
+                <th width="50"></th>
+                <th width="200">Book Title</th>
+                <th width="200">Category</th>
+                <th width="180"></th>
+                <th width="180"></th>
+            </tr>
+        </thead>
+        <tbody>
+            {#books}
+                <tr>
+                    <td>{._id}</td>
+                    <td><img src="{.cover}" alt="" style="height:55px;"></td>
+                    <td>{.title}</td>
+                    <td>{.category}</td>
+                    <td><a href="/manage/books/edit/{._id}" class="button">Edit</a></td>
+                    <td>
+                        <form action="/manage/books/delete/{._id}" method="POST">
+                            <input type="submit" value="Delete" class="button alert">
+                            <input type="hidden" name="_csrf" value="{_csrf}">
+                            <input type="hidden" name="_method" value="DELETE">
+                        </form>
+                    </td>
+                </tr>
+            {/books}
+        </tbody>
+    </table>
+{/body}

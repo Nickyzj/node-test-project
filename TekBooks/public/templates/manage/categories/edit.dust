@@ -1,3 +1,22 @@
 {>"layouts/manage" /}
 
-CATEGORIES EDIT
+{<body}
+<div class="grid-x grid-padding-x">
+    <div class="large-12 cell">
+        <h2>Edit Category</h2>
+        <form method="POST" action="/manage/categories/edit/{category._id}">
+            <div class="grid-x grid-padding-x">
+                <div class="large-4 cell">
+                    <label for="">Name
+                        <input type="text" name="name" value="{category.name}">
+                    </label>
+                </div>
+                <div class="large-12 cell">
+                    <input type="submit" value="Submit" class="button">
+                </div>
+            </div>
+            <input type="hidden" name="_csrf" value="{_csrf}">
+        </form>
+    </div>
+</div>
+{/body}

@@ -1,3 +1,67 @@
 {>"layouts/manage" /}
 
-EDIT BOOKS
+
+{<body}
+<div class="grid-x grid-padding-x">
+    <div class="large-12 cell">
+        <h2>Add Book</h2>
+        <form action="/manage/books/edit/{book._id}" method="POST">
+            <div class="grid-x grid-padding-x">
+                <div class="large-12 cell">
+                    <label>Title
+                        <input type="text" name="title" value="{book.title}">
+                    </label>
+                </div>
+            </div>
+            <div class="grid-x grid-padding-x">
+                <div class="large-12 cell">
+                    <label>Author
+                        <input type="text" name="author" value="{book.author}">
+                    </label>
+                </div>
+                <div class="large-12 cell">
+                    <label>Publiser
+                        <input type="text" name="publisher" value="{book.publisher}">
+                    </label>
+                </div>
+                <div class="large-12 cell">
+                    <label>Pirce
+                        <input type="text" name="price" value="{book.price}">
+                    </label>
+                </div>
+            </div>
+            <div class="grid-x grid-padding-x">
+                <div class="large-12 cell">
+                    <label>Category
+                        <select name="category">
+                            {#categories}
+                                <option value="{.name}">{.name}</option>
+                            {/categories}
+                        </select>
+                    </label>
+                </div>
+            </div>
+            <div class="grid-x grid-padding-x">
+                <div class="large-12 cell">
+                    <label>Description
+                        <textarea name="description">{book.description}</textarea>
+                    </label>
+                </div>
+            </div>
+            <div class="grid-x grid-padding-x">
+                <div class="large-x cell">
+                    <label>Cover URL
+                        <input type="text" name="cover" value="{book.cover}">
+                    </label>
+                </div>
+            </div>
+            <div class="grid-x grid-padding-x">
+                <div class="large-12 cell">
+                    <input type="submit" value="Submit"  class="button">
+                </div>
+            </div>
+            <input type="hidden" name="_csrf" value="{_csrf}">
+        </form>
+    </div>
+</div>
+{/body}
