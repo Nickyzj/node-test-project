@@ -1,4 +1,4 @@
-{>"layouts/master" /}
+{>"layouts/manage" /}
 
 {<body}
     <h2>Categories</h2>
