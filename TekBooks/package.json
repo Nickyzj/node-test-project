@@ -23,7 +23,9 @@
     "foundation-cli": "^2.2.5",
     "kraken-js": "^2.0.0",
     "makara": "^2.0.3",
-    "requirejs": "^2.3.5"
+    "requirejs": "^2.3.5",
+    "mongoose": "*",
+    "connect-flash": "*"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
